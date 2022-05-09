@@ -1,0 +1,6 @@
+framework module Pods_informationGatherringAppTests {
+  umbrella header "Pods-informationGatherringAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
