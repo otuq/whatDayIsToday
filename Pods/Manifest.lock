@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.4.4)
+  - FSCalendar (2.8.2)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - FSCalendar
   - R.swift
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FSCalendar
     - R.swift
     - R.swift.Library
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
 
-PODFILE CHECKSUM: e2e7f9d80106f45abf4083623a14a427b2cf907c
+PODFILE CHECKSUM: 5ae614272dfeaa526553b2fc340d9b94e1eeec99
 
 COCOAPODS: 1.11.2

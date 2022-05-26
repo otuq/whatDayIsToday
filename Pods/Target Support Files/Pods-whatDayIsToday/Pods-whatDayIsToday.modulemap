@@ -1,0 +1,6 @@
+framework module Pods_whatDayIsToday {
+  umbrella header "Pods-whatDayIsToday-umbrella.h"
+
+  export *
+  module * { export * }
+}

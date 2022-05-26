@@ -1,5 +1,5 @@
 included:
-- informationGatherringApp
+- whatDayIsToday
 excluded:
 - Pods
 - R.generated.swift

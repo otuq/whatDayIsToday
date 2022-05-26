@@ -1,21 +1,22 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'informationGatherringApp' do
+target 'whatDayIsToday' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for informationGatherringApp
+  # Pods for whatDayIsToday
 
 pod 'Alamofire'
 pod 'R.swift'
+pod 'FSCalendar'
 
-  target 'informationGatherringAppTests' do
+  target 'whatDayIsTodayTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'informationGatherringAppUITests' do
+  target 'whatDayIsTodayUITests' do
     # Pods for testing
   end
 
