@@ -33,3 +33,11 @@ extension String {
 extension Notification.Name {
     static let currentDate = Notification.Name("currentDate")
 }
+extension CALayer {
+    func dropShadow() {
+        shadowOffset = .init(width: 1.5, height: 1.5)
+        shadowColor = UIColor.black.cgColor
+        shadowOpacity = 0.3
+        shadowRadius = 1
+    }
+}

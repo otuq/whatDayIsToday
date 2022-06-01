@@ -1,4 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday-whatDayIsTodayUITests/Pods-whatDayIsToday-whatDayIsTodayUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework
 ${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
+${BUILT_PRODUCTS_DIR}/TabPageViewController/TabPageViewController.framework

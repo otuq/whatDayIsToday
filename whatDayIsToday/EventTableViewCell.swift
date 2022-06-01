@@ -7,30 +7,30 @@
 
 import UIKit
 
-class ArticleTableViewCell: UITableViewCell {
+class EventTableViewCell: UITableViewCell {
     // MARK: - Properties
     var article: String? {
         didSet {
-            articleLabel.text = article
+            eventLabel.text = article
         }
     }
     private let selectView = UIView()
 
     // MARK: - Outlets
 
-    @IBOutlet var articleLabel: UILabel!
-    @IBOutlet var detailedButton: UIButton!
+    @IBOutlet var eventLabel: UILabel!
+    @IBOutlet var eventButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         selectView.backgroundColor = .clear
         selectedBackgroundView = selectView
-        articleLabel.isUserInteractionEnabled = false
+        eventLabel.isUserInteractionEnabled = false
 
-        detailedButton.layer.borderWidth = 2
-        detailedButton.layer.borderColor = UIColor.darkGray.cgColor
-        detailedButton.backgroundColor = .clear
-        detailedButton.setTitleColor(.darkGray, for: .normal)
+        eventButton.layer.borderWidth = 2
+        eventButton.layer.borderColor = UIColor.darkGray.cgColor
+        eventButton.backgroundColor = .clear
+        eventButton.setTitleColor(.darkGray, for: .normal)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

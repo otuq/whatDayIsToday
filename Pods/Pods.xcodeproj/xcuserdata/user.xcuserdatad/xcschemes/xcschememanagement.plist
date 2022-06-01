@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PKHUD-PKHUDResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PKHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-whatDayIsToday-whatDayIsTodayUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -35,6 +45,11 @@
 			<false/>
 		</dict>
 		<key>R.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TabPageViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

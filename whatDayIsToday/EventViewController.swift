@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ArticleViewController: UIViewController {
+class EventViewController: UIViewController {
     enum ButtonName: Int {
         case buttonA, buttonB, buttonC, buttonD, buttonE, buttonF
     }
@@ -15,8 +15,8 @@ class ArticleViewController: UIViewController {
     private var articles: [String]?
     private let cellId = "cellId"
     // MARK: Outlets,Actions
-    @IBOutlet var articleTableView: UITableView!
-    
+    @IBOutlet var eventTableView: UITableView!
+
     // MARK: LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,22 +24,22 @@ class ArticleViewController: UIViewController {
         settingUI()
     }
     private func initialize() {
-        articles = ArticlePresenter.shared.articleInfoGathering()
+        articles = ArticlePresentation.shared.articleInfoGathering()
     }
     private func settingUI() {
-        articleTableView.delegate = self
-        articleTableView.dataSource = self
-        articleTableView.rowHeight = UITableView.automaticDimension
-        articleTableView.register(UINib(nibName: "ArticleTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
+        eventTableView.delegate = self
+        eventTableView.dataSource = self
+        eventTableView.rowHeight = UITableView.automaticDimension
+        eventTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
     }
 }
-extension ArticleViewController: UITableViewDelegate, UITableViewDataSource {
+extension EventViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         articles?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)as! ArticleTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)as! EventTableViewCell
         cell.article = articles?[indexPath.row]
         return cell
     }

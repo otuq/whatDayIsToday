@@ -11,21 +11,24 @@
 		C42804B81799CD11E04FA561 /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E43D6FAD2C6E5B4C366245 /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework */; };
 		CE1629F8265B5CF1005CCAE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1629F7265B5CF1005CCAE2 /* AppDelegate.swift */; };
 		CE1629FA265B5CF1005CCAE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1629F9265B5CF1005CCAE2 /* SceneDelegate.swift */; };
-		CE1629FC265B5CF1005CCAE2 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1629FB265B5CF1005CCAE2 /* ArticleViewController.swift */; };
-		CE1629FF265B5CF1005CCAE2 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1629FD265B5CF1005CCAE2 /* Article.storyboard */; };
+		CE1629FC265B5CF1005CCAE2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1629FB265B5CF1005CCAE2 /* EventViewController.swift */; };
+		CE1629FF265B5CF1005CCAE2 /* BirthDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1629FD265B5CF1005CCAE2 /* BirthDay.storyboard */; };
 		CE162A01265B5CF2005CCAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE162A00265B5CF2005CCAE2 /* Assets.xcassets */; };
 		CE162A04265B5CF2005CCAE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE162A02265B5CF2005CCAE2 /* LaunchScreen.storyboard */; };
 		CE7E1952283B5E5F00A0F25B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E1951283B5E5F00A0F25B /* R.generated.swift */; };
+		CE9602CD2847888C00183CC5 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9602CC2847888C00183CC5 /* EventTableViewCell.xib */; };
+		CE9602D02847898600183CC5 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9602CF2847898600183CC5 /* Event.storyboard */; };
+		CE9602D228478AC800183CC5 /* BirthDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9602D128478AC800183CC5 /* BirthDayViewController.swift */; };
+		CE9602D528478B5600183CC5 /* BirthDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9602D428478B5600183CC5 /* BirthDayTableViewCell.swift */; };
 		CE9EECB528291BA800BB1B33 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EECB428291BA800BB1B33 /* File.swift */; };
 		CEB5EE4C27AA5F320012B3A6 /* APIRequestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */; };
 		CEB5EE5027AA6B120012B3A6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */; };
 		CEB5EE5227AA6BBA0012B3A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */; };
-		CED30872282CD7B100CAB96F /* ArticlePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED30871282CD7B100CAB96F /* ArticlePresenter.swift */; };
+		CED30872282CD7B100CAB96F /* ArticlePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED30871282CD7B100CAB96F /* ArticlePresentation.swift */; };
 		CEDBF4A4265B66DA009467C4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4A3265B66D9009467C4 /* Extensions.swift */; };
 		CEDBF4C1265B7350009467C4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4C0265B7350009467C4 /* Model.swift */; };
-		CEDBF4CE265B7C36009467C4 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4CC265B7C36009467C4 /* ArticleTableViewCell.swift */; };
-		CEDBF4CF265B7C36009467C4 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDBF4CD265B7C36009467C4 /* ArticleTableViewCell.xib */; };
-		CEDBF4EA265BC727009467C4 /* APIRequestAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4E9265BC727009467C4 /* APIRequestAlamofire.swift */; };
+		CEDBF4CE265B7C36009467C4 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4CC265B7C36009467C4 /* EventTableViewCell.swift */; };
+		CEDBF4CF265B7C36009467C4 /* BirthDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDBF4CD265B7C36009467C4 /* BirthDayTableViewCell.xib */; };
 		F3EBF130664D2D7501BD5D85 /* Pods_whatDayIsTodayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A478A0DB45C44A2607485C4 /* Pods_whatDayIsTodayTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,24 +64,27 @@
 		CE1629F4265B5CF1005CCAE2 /* whatDayIsToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatDayIsToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1629F7265B5CF1005CCAE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1629F9265B5CF1005CCAE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE1629FB265B5CF1005CCAE2 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
-		CE1629FE265B5CF1005CCAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Article.storyboard; sourceTree = "<group>"; };
+		CE1629FB265B5CF1005CCAE2 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		CE1629FE265B5CF1005CCAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BirthDay.storyboard; sourceTree = "<group>"; };
 		CE162A00265B5CF2005CCAE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE162A03265B5CF2005CCAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE162A05265B5CF2005CCAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE162A0A265B5CF2005CCAE2 /* whatDayIsTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE162A15265B5CF2005CCAE2 /* whatDayIsTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7E1951283B5E5F00A0F25B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CE9602CC2847888C00183CC5 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		CE9602CF2847898600183CC5 /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
+		CE9602D128478AC800183CC5 /* BirthDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthDayViewController.swift; sourceTree = "<group>"; };
+		CE9602D428478B5600183CC5 /* BirthDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayTableViewCell.swift; sourceTree = "<group>"; };
 		CE9EECB428291BA800BB1B33 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestURLSession.swift; sourceTree = "<group>"; };
 		CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CED30871282CD7B100CAB96F /* ArticlePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePresenter.swift; sourceTree = "<group>"; };
+		CED30871282CD7B100CAB96F /* ArticlePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePresentation.swift; sourceTree = "<group>"; };
 		CEDBF4A3265B66D9009467C4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CEDBF4C0265B7350009467C4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		CEDBF4CC265B7C36009467C4 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
-		CEDBF4CD265B7C36009467C4 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
-		CEDBF4E9265BC727009467C4 /* APIRequestAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestAlamofire.swift; sourceTree = "<group>"; };
+		CEDBF4CC265B7C36009467C4 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		CEDBF4CD265B7C36009467C4 /* BirthDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BirthDayTableViewCell.xib; sourceTree = "<group>"; };
 		D8C8DDEED60F8AE914CAA03C /* Pods-informationGatherringAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-informationGatherringAppTests.debug.xcconfig"; path = "Target Support Files/Pods-informationGatherringAppTests/Pods-informationGatherringAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0D0E950CC03A874CD25380 /* Pods-whatDayIsTodayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatDayIsTodayTests.release.xcconfig"; path = "Target Support Files/Pods-whatDayIsTodayTests/Pods-whatDayIsTodayTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE613CDE822CFD96354B78D1 /* Pods-whatDayIsToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatDayIsToday.debug.xcconfig"; path = "Target Support Files/Pods-whatDayIsToday/Pods-whatDayIsToday.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,27 +165,26 @@
 				CEDBF4BF265B733D009467C4 /* model */,
 				CEDBF4A2265B66C3009467C4 /* Extension */,
 				CE8DEDEE2828CDD70031F2E3 /* API */,
-				CE162A2A265B5D28005CCAE2 /* ArticleViewControlelr */,
+				CE9602D328478B1200183CC5 /* BirthDayViewController */,
+				CE162A2A265B5D28005CCAE2 /* EventViewControlelr */,
 				CED3086F282CD59000CAB96F /* HomeViewController */,
 				CEDBF4B3265B7105009467C4 /* StoryBoards */,
 			);
 			path = whatDayIsToday;
 			sourceTree = "<group>";
 		};
-		CE162A2A265B5D28005CCAE2 /* ArticleViewControlelr */ = {
+		CE162A2A265B5D28005CCAE2 /* EventViewControlelr */ = {
 			isa = PBXGroup;
 			children = (
-				CE1629FB265B5CF1005CCAE2 /* ArticleViewController.swift */,
-				CED30871282CD7B100CAB96F /* ArticlePresenter.swift */,
-				CEDBF4CC265B7C36009467C4 /* ArticleTableViewCell.swift */,
+				CE1629FB265B5CF1005CCAE2 /* EventViewController.swift */,
+				CEDBF4CC265B7C36009467C4 /* EventTableViewCell.swift */,
 			);
-			name = ArticleViewControlelr;
+			name = EventViewControlelr;
 			sourceTree = "<group>";
 		};
 		CE8DEDEE2828CDD70031F2E3 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				CEDBF4E9265BC727009467C4 /* APIRequestAlamofire.swift */,
 				CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */,
 			);
 			name = API;
@@ -193,6 +198,15 @@
 				5A478A0DB45C44A2607485C4 /* Pods_whatDayIsTodayTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9602D328478B1200183CC5 /* BirthDayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE9602D128478AC800183CC5 /* BirthDayViewController.swift */,
+				CE9602D428478B5600183CC5 /* BirthDayTableViewCell.swift */,
+			);
+			name = BirthDayViewController;
 			sourceTree = "<group>";
 		};
 		CEC570B1283B5A5F00CA964F /* Configuration */ = {
@@ -213,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */,
+				CED30871282CD7B100CAB96F /* ArticlePresentation.swift */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -229,8 +244,10 @@
 			isa = PBXGroup;
 			children = (
 				CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */,
-				CE1629FD265B5CF1005CCAE2 /* Article.storyboard */,
-				CEDBF4CD265B7C36009467C4 /* ArticleTableViewCell.xib */,
+				CE9602CF2847898600183CC5 /* Event.storyboard */,
+				CE1629FD265B5CF1005CCAE2 /* BirthDay.storyboard */,
+				CE9602CC2847888C00183CC5 /* EventTableViewCell.xib */,
+				CEDBF4CD265B7C36009467C4 /* BirthDayTableViewCell.xib */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
@@ -356,9 +373,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE162A04265B5CF2005CCAE2 /* LaunchScreen.storyboard in Resources */,
-				CEDBF4CF265B7C36009467C4 /* ArticleTableViewCell.xib in Resources */,
+				CEDBF4CF265B7C36009467C4 /* BirthDayTableViewCell.xib in Resources */,
 				CE162A01265B5CF2005CCAE2 /* Assets.xcassets in Resources */,
-				CE1629FF265B5CF1005CCAE2 /* Article.storyboard in Resources */,
+				CE9602CD2847888C00183CC5 /* EventTableViewCell.xib in Resources */,
+				CE1629FF265B5CF1005CCAE2 /* BirthDay.storyboard in Resources */,
+				CE9602D02847898600183CC5 /* Event.storyboard in Resources */,
 				CEB5EE5027AA6B120012B3A6 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,17 +543,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED30872282CD7B100CAB96F /* ArticlePresenter.swift in Sources */,
-				CE1629FC265B5CF1005CCAE2 /* ArticleViewController.swift in Sources */,
+				CED30872282CD7B100CAB96F /* ArticlePresentation.swift in Sources */,
+				CE1629FC265B5CF1005CCAE2 /* EventViewController.swift in Sources */,
 				CE1629F8265B5CF1005CCAE2 /* AppDelegate.swift in Sources */,
 				CEB5EE4C27AA5F320012B3A6 /* APIRequestURLSession.swift in Sources */,
+				CE9602D228478AC800183CC5 /* BirthDayViewController.swift in Sources */,
 				CE1629FA265B5CF1005CCAE2 /* SceneDelegate.swift in Sources */,
+				CE9602D528478B5600183CC5 /* BirthDayTableViewCell.swift in Sources */,
 				CEDBF4C1265B7350009467C4 /* Model.swift in Sources */,
 				CE7E1952283B5E5F00A0F25B /* R.generated.swift in Sources */,
 				CEDBF4A4265B66DA009467C4 /* Extensions.swift in Sources */,
-				CEDBF4CE265B7C36009467C4 /* ArticleTableViewCell.swift in Sources */,
+				CEDBF4CE265B7C36009467C4 /* EventTableViewCell.swift in Sources */,
 				CEB5EE5227AA6BBA0012B3A6 /* HomeViewController.swift in Sources */,
-				CEDBF4EA265BC727009467C4 /* APIRequestAlamofire.swift in Sources */,
 				CE9EECB528291BA800BB1B33 /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,12 +589,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE1629FD265B5CF1005CCAE2 /* Article.storyboard */ = {
+		CE1629FD265B5CF1005CCAE2 /* BirthDay.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CE1629FE265B5CF1005CCAE2 /* Base */,
 			);
-			name = Article.storyboard;
+			name = BirthDay.storyboard;
 			sourceTree = "<group>";
 		};
 		CE162A02265B5CF2005CCAE2 /* LaunchScreen.storyboard */ = {

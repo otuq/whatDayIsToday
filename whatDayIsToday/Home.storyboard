@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,29 +18,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rl-4m-s22" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="64" width="414" height="599"/>
-                                <color key="backgroundColor" red="0.1980996672" green="0.96130555870000001" blue="0.7538765154" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="10" y="144" width="394" height="469"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="tintColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5b-rf-g2W">
-                                <rect key="frame" x="157" y="713" width="100" height="50"/>
+                                <rect key="frame" x="154.5" y="663" width="105" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="PVf-B6-H48"/>
                                     <constraint firstAttribute="height" constant="50" id="ipM-KM-RCK"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Search">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="選択した日付を検索">
+                                            <attributes>
+                                                <font key="NSFont" size="9" name="Osaka"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7Rl-4m-s22" secondAttribute="trailing" id="DKu-5T-vrj"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="s5b-rf-g2W" secondAttribute="bottom" constant="50" id="Lf1-xq-CCy"/>
-                            <constraint firstItem="7Rl-4m-s22" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="anS-In-u5C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7Rl-4m-s22" secondAttribute="trailing" constant="10" id="DKu-5T-vrj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="s5b-rf-g2W" secondAttribute="bottom" constant="100" id="Lf1-xq-CCy"/>
+                            <constraint firstItem="7Rl-4m-s22" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="anS-In-u5C"/>
                             <constraint firstItem="s5b-rf-g2W" firstAttribute="top" secondItem="7Rl-4m-s22" secondAttribute="bottom" constant="50" id="hrL-ez-Z5M"/>
                             <constraint firstItem="s5b-rf-g2W" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jwx-a3-gz5"/>
-                            <constraint firstItem="7Rl-4m-s22" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="nRJ-mw-xpc"/>
+                            <constraint firstItem="7Rl-4m-s22" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="nRJ-mw-xpc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Mk-vI-U1r"/>
@@ -54,4 +72,9 @@
             <point key="canvasLocation" x="955.07246376811599" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
