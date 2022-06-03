@@ -15,6 +15,12 @@
 		CE1629FF265B5CF1005CCAE2 /* BirthDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1629FD265B5CF1005CCAE2 /* BirthDay.storyboard */; };
 		CE162A01265B5CF2005CCAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE162A00265B5CF2005CCAE2 /* Assets.xcassets */; };
 		CE162A04265B5CF2005CCAE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE162A02265B5CF2005CCAE2 /* LaunchScreen.storyboard */; };
+		CE2C812B284868D600F11D75 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C812A284868D600F11D75 /* TabPageViewController.swift */; };
+		CE2C812D28486B2A00F11D75 /* TabPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2C812C28486B2A00F11D75 /* TabPage.storyboard */; };
+		CE2C81372848703B00F11D75 /* TabPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C81352848703B00F11D75 /* TabPageCollectionViewCell.swift */; };
+		CE2C81382848703B00F11D75 /* TabPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2C81362848703B00F11D75 /* TabPageCollectionViewCell.xib */; };
+		CE2C813A2848889100F11D75 /* TabPageCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C81392848889100F11D75 /* TabPageCustomView.swift */; };
+		CE2C813C28488EA900F11D75 /* TabPageCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */; };
 		CE7E1952283B5E5F00A0F25B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E1951283B5E5F00A0F25B /* R.generated.swift */; };
 		CE9602CD2847888C00183CC5 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9602CC2847888C00183CC5 /* EventTableViewCell.xib */; };
 		CE9602D02847898600183CC5 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9602CF2847898600183CC5 /* Event.storyboard */; };
@@ -71,6 +77,12 @@
 		CE162A05265B5CF2005CCAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE162A0A265B5CF2005CCAE2 /* whatDayIsTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE162A15265B5CF2005CCAE2 /* whatDayIsTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2C812A284868D600F11D75 /* TabPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
+		CE2C812C28486B2A00F11D75 /* TabPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPage.storyboard; sourceTree = "<group>"; };
+		CE2C81352848703B00F11D75 /* TabPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE2C81362848703B00F11D75 /* TabPageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabPageCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE2C81392848889100F11D75 /* TabPageCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageCustomView.swift; sourceTree = "<group>"; };
+		CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabPageCustomView.xib; sourceTree = "<group>"; };
 		CE7E1951283B5E5F00A0F25B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CE9602CC2847888C00183CC5 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		CE9602CF2847898600183CC5 /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
@@ -165,9 +177,10 @@
 				CEDBF4BF265B733D009467C4 /* model */,
 				CEDBF4A2265B66C3009467C4 /* Extension */,
 				CE8DEDEE2828CDD70031F2E3 /* API */,
-				CE9602D328478B1200183CC5 /* BirthDayViewController */,
 				CE162A2A265B5D28005CCAE2 /* EventViewControlelr */,
+				CE9602D328478B1200183CC5 /* BirthDayViewController */,
 				CED3086F282CD59000CAB96F /* HomeViewController */,
+				CE2C813228486F9A00F11D75 /* TabPage */,
 				CEDBF4B3265B7105009467C4 /* StoryBoards */,
 			);
 			path = whatDayIsToday;
@@ -180,6 +193,16 @@
 				CEDBF4CC265B7C36009467C4 /* EventTableViewCell.swift */,
 			);
 			name = EventViewControlelr;
+			sourceTree = "<group>";
+		};
+		CE2C813228486F9A00F11D75 /* TabPage */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C812A284868D600F11D75 /* TabPageViewController.swift */,
+				CE2C81392848889100F11D75 /* TabPageCustomView.swift */,
+				CE2C81352848703B00F11D75 /* TabPageCollectionViewCell.swift */,
+			);
+			name = TabPage;
 			sourceTree = "<group>";
 		};
 		CE8DEDEE2828CDD70031F2E3 /* API */ = {
@@ -244,8 +267,11 @@
 			isa = PBXGroup;
 			children = (
 				CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */,
+				CE2C812C28486B2A00F11D75 /* TabPage.storyboard */,
 				CE9602CF2847898600183CC5 /* Event.storyboard */,
 				CE1629FD265B5CF1005CCAE2 /* BirthDay.storyboard */,
+				CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */,
+				CE2C81362848703B00F11D75 /* TabPageCollectionViewCell.xib */,
 				CE9602CC2847888C00183CC5 /* EventTableViewCell.xib */,
 				CEDBF4CD265B7C36009467C4 /* BirthDayTableViewCell.xib */,
 			);
@@ -373,10 +399,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE162A04265B5CF2005CCAE2 /* LaunchScreen.storyboard in Resources */,
+				CE2C813C28488EA900F11D75 /* TabPageCustomView.xib in Resources */,
 				CEDBF4CF265B7C36009467C4 /* BirthDayTableViewCell.xib in Resources */,
 				CE162A01265B5CF2005CCAE2 /* Assets.xcassets in Resources */,
 				CE9602CD2847888C00183CC5 /* EventTableViewCell.xib in Resources */,
+				CE2C81382848703B00F11D75 /* TabPageCollectionViewCell.xib in Resources */,
 				CE1629FF265B5CF1005CCAE2 /* BirthDay.storyboard in Resources */,
+				CE2C812D28486B2A00F11D75 /* TabPage.storyboard in Resources */,
 				CE9602D02847898600183CC5 /* Event.storyboard in Resources */,
 				CEB5EE5027AA6B120012B3A6 /* Home.storyboard in Resources */,
 			);
@@ -549,11 +578,14 @@
 				CEB5EE4C27AA5F320012B3A6 /* APIRequestURLSession.swift in Sources */,
 				CE9602D228478AC800183CC5 /* BirthDayViewController.swift in Sources */,
 				CE1629FA265B5CF1005CCAE2 /* SceneDelegate.swift in Sources */,
+				CE2C81372848703B00F11D75 /* TabPageCollectionViewCell.swift in Sources */,
 				CE9602D528478B5600183CC5 /* BirthDayTableViewCell.swift in Sources */,
 				CEDBF4C1265B7350009467C4 /* Model.swift in Sources */,
 				CE7E1952283B5E5F00A0F25B /* R.generated.swift in Sources */,
 				CEDBF4A4265B66DA009467C4 /* Extensions.swift in Sources */,
+				CE2C813A2848889100F11D75 /* TabPageCustomView.swift in Sources */,
 				CEDBF4CE265B7C36009467C4 /* EventTableViewCell.swift in Sources */,
+				CE2C812B284868D600F11D75 /* TabPageViewController.swift in Sources */,
 				CEB5EE5227AA6BBA0012B3A6 /* HomeViewController.swift in Sources */,
 				CE9EECB528291BA800BB1B33 /* File.swift in Sources */,
 			);

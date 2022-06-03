@@ -6,7 +6,6 @@
 //
 import FSCalendar
 import PKHUD
-import TabPageViewController
 import UIKit
 
 class HomeViewController: UIViewController {
@@ -38,16 +37,12 @@ class HomeViewController: UIViewController {
         let dateString = selectDateString ?? todayDateString
         UserDefaults.standard.set(dateString, forKey: "selectDate")
 
-        let tabPageVC = TabPageViewController()
-        let eventVC = R.storyboard.event.instantiateInitialViewController()
-        let birthDayVC = R.storyboard.birthDay.instantiateInitialViewController()
-        tabPageVC.tabItems = [(eventVC!, "出来事"), (birthDayVC!, "誕生日")]
-        let nav = UINavigationController(rootViewController: tabPageVC)
-        tabPageVC.navigationItem.title = "\(dateString)の出来事、誕生日"
-        tabPageVC.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(closeButton))
-        nav.modalPresentationStyle = .overFullScreen
-        HUD.show(.progress)
-        self.present(nav, animated: true)
+        //        let nav = UINavigationController(rootViewController: tabPageVC)
+        //        tabPageVC.navigationItem.title = "\(dateString)の出来事、誕生日"
+        //        tabPageVC.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(closeButton))
+        //        nav.modalPresentationStyle = .overFullScreen
+        //        HUD.show(.progress)
+        //        self.present(nav, animated: true)
     }
     @objc private func closeButton() {
         dismiss(animated: true)
@@ -62,6 +57,5 @@ class HomeViewController: UIViewController {
 extension HomeViewController: FSCalendarDelegate, FSCalendarDataSource {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         selectDateString = convertDateToString(date: date)
-        print(selectDateString)
     }
 }

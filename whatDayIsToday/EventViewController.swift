@@ -24,7 +24,7 @@ class EventViewController: UIViewController {
         settingUI()
     }
     private func initialize() {
-        articles = ArticlePresentation.shared.articleInfoGathering()
+        //        articles = ArticlePresentation.shared.articleExtract(start: 0, end: 1)
     }
     private func settingUI() {
         eventTableView.delegate = self
@@ -35,7 +35,7 @@ class EventViewController: UIViewController {
 }
 extension EventViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        articles?.count ?? 0
+        articles?.count ?? 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

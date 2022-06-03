@@ -24,7 +24,7 @@ class BirthDayViewController: UIViewController {
         settingUI()
     }
     private func initialize() {
-        articles = ArticlePresentation.shared.articleInfoGathering()
+        //        articles = ArticlePresentation.shared.articleExtract(start: 1, end: 2)
     }
     private func settingUI() {
         birthDayTableView.delegate = self
@@ -35,11 +35,11 @@ class BirthDayViewController: UIViewController {
 }
 extension BirthDayViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        articles?.count ?? 0
+        articles?.count ?? 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)as! EventTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)as! BirthDayTableViewCell
         cell.article = articles?[indexPath.row]
         return cell
     }
