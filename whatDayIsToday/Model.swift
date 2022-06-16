@@ -16,11 +16,9 @@ import Foundation
 struct Result: Decodable {
     let query: Query
 }
-
 struct Query: Decodable {
     let pages: [String: Pages]
 }
-
 struct Pages: Decodable {
     let pageid: Int
     let title: String

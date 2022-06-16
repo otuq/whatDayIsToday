@@ -9,9 +9,7 @@ import UIKit
 
 class TabPageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tabPageLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
 }

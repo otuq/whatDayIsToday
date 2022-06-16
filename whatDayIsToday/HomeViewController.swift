@@ -5,15 +5,16 @@
 //  Created by USER on 2022/05/09.
 //
 import FSCalendar
-import PKHUD
 import UIKit
+import PKHUD
 
 class HomeViewController: UIViewController {
+    // MARK: -Properties
     private var selectDateString: String?
-    // MARK: Outllets, Actions
+    // MARK: Outllet, Action
     @IBOutlet var calendar: FSCalendar!
     @IBOutlet var articleTransitionBTN: UIButton!
-
+    // MARK: -LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         settingDelegate()
@@ -33,16 +34,33 @@ class HomeViewController: UIViewController {
         articleTransitionBTN.addTarget(self, action: #selector(transitionArticleVC), for: .touchUpInside)
     }
     @objc private func transitionArticleVC() {
+        // インジケータが表示された後に次の処理を実行しないとインジケータの表示に遅れが出てしまうため
+        // dispatchGroupを使って順番にキューを追加し並列処理にする。
+        let dispatchGroup = DispatchGroup()
+        let queue = DispatchQueue(label: "queue")
+        // グループにキューを追加しメインスレッドで並列処理を実行する
+        queue.async(group: dispatchGroup, execute: {
+            DispatchQueue.main.sync {
+                HUD.show(.progress)
+            }
+        })
+        // インジケータの並列処理が実行された後にキューを追加しメインスレッドで並列処理を実行する
+        queue.async(group: dispatchGroup, execute: {
+            DispatchQueue.main.sync {
+                self.instantiateTabPageVC()
+            }
+        })
+    }
+    private func instantiateTabPageVC() {
         let todayDateString = convertDateToString(date: calendar.today!)
         let dateString = selectDateString ?? todayDateString
         UserDefaults.standard.set(dateString, forKey: "selectDate")
-
-        //        let nav = UINavigationController(rootViewController: tabPageVC)
-        //        tabPageVC.navigationItem.title = "\(dateString)の出来事、誕生日"
-        //        tabPageVC.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(closeButton))
-        //        nav.modalPresentationStyle = .overFullScreen
-        //        HUD.show(.progress)
-        //        self.present(nav, animated: true)
+        let tabPageVC = R.storyboard.tabPage.instantiateInitialViewController()
+        let nav = UINavigationController(rootViewController: tabPageVC!)
+        tabPageVC?.navigationItem.title = "\(dateString)の出来事、誕生日"
+        tabPageVC?.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(closeButton))
+        nav.modalPresentationStyle = .overFullScreen
+        present(nav, animated: true)
     }
     @objc private func closeButton() {
         dismiss(animated: true)
