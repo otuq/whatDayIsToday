@@ -8,16 +8,18 @@
 import UIKit
 
 class TabPageCustomView: UIView {
-    // MARK: -Properties
+    // MARK: - Properties
     private let cellID = "cellID"
     private var currentIndex = 0
     private var itemSize: CGSize!
     private let column = 2
     private let tabTitle = ["出来事", "誕生日"]
     var selectIndex: ((_ index: Int) -> Void)?
-    // MARK: -Outllet, Action
+
+    // MARK: - Outllet, Action
     @IBOutlet var tabPageCollectionView: UICollectionView!
-    // MARK: -LifeCycle Methods
+
+    // MARK: - LifeCycle Methods
     init(size: CGSize) {
         super.init(frame: .zero)
         itemSize = size
@@ -28,7 +30,7 @@ class TabPageCustomView: UIView {
         tabPageCollectionView.delegate = self
         tabPageCollectionView.dataSource = self
         tabPageCollectionView.register(UINib(nibName: "TabPageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellID)
-        // collectionViewを横スクロールにする。
+
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: itemSize.width / CGFloat(column), height: itemSize.height)
@@ -44,12 +46,12 @@ class TabPageCustomView: UIView {
         view.frame = bounds
         addSubview(view)
     }
-} 
+}
 extension TabPageCustomView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         column
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)as! TabPageCollectionViewCell
         let parentVC = parentViewController as! TabPageViewController
@@ -57,12 +59,12 @@ extension TabPageCustomView: UICollectionViewDelegate, UICollectionViewDataSourc
         parentVC.currentIndex = { index in
             self.currentIndex = index
         }
-        cell.tabPageLabel.textColor = indexPath.row == currentIndex ? .red : .black
+        cell.tabPageLabel.textColor = indexPath.row == currentIndex ? .red : UIColor.dynamicColor(light: .darkGray, dark: .white)
         cell.tabPageLabel.text = tabTitle[indexPath.row]
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //　選択したtabのインデックスをクロージャに渡す
+        //　タブをタップされた時にページをスクロールするためのインデックス番号を渡す。
         selectIndex?(indexPath.row)
     }
 }

@@ -8,15 +8,16 @@
 import Foundation
 import PKHUD
 
-class ArticlePresentation {
-    // MARK: -Properties
+class ArticlesPresent {
+    // MARK: - Properties
     private var articles: [String]?
-    // MARK: -LifeCycle Methods
+
+    // MARK: - LifeCycle Methods
     init() {
         self.articles = articlesInfoGathering()
-        DispatchQueue.main.async {
-            HUD.hide()
-        }
+        //        DispatchQueue.main.async {
+        //            HUD.hide()
+        //        }
     }
     private func articlesInfoGathering() -> [String]? {
         // 非同期処理であるapi情報の取得してを直列にするためDispatchSemaphoreを使ってapi取得完了まで待機状態する。
@@ -43,7 +44,7 @@ class ArticlePresentation {
         semaphore.wait()
         return article
     }
-    func articleExtract(start: Int, end: Int) -> [String]? {
+    func articlesExtract(start: Int, end: Int) -> [String]? {
         guard let articles = articles else { return nil }
         // サブタイトルが含まれている配列番号を収集
         var indexs = [Int]()
@@ -53,7 +54,9 @@ class ArticlePresentation {
                 indexs.append(index)
             }
         }
-        // サブタイトルの次がサブタイトルの場合があるため次の番号がindexsに含まれているか
+        // 目的のタイトルから配列をスライスする。
+        // スライスするサブタイトルの次の番号が頭で次のサブタイトルの前の番号が終わり。
+        // タイトル内の記事の記述がなく、目的タイトルの番号が次がタイトルの番号である場合があるため次の番号がindexsに含まれている場合はfalse
         let startInd = indexs.contains((indexs[start] + 1)) ? (indexs[start] + 2) : (indexs[start] + 1)
         let endInd = indexs.contains((indexs[end] - 1)) ? (indexs[end] - 2) : (indexs[end] - 1)
         let extractArray = articles[startInd...endInd]

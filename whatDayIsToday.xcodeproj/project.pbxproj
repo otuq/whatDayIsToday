@@ -21,12 +21,12 @@
 		CE2C813A2848889100F11D75 /* TabPageCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C81392848889100F11D75 /* TabPageCustomView.swift */; };
 		CE2C813C28488EA900F11D75 /* TabPageCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */; };
 		CE7E1952283B5E5F00A0F25B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E1951283B5E5F00A0F25B /* R.generated.swift */; };
-		CE9602D228478AC800183CC5 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9602D128478AC800183CC5 /* ArticlesViewController.swift */; };
+		CE9602D228478AC800183CC5 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9602D128478AC800183CC5 /* ArticleViewController.swift */; };
 		CE9602D528478B5600183CC5 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9602D428478B5600183CC5 /* ArticleTableViewCell.swift */; };
 		CEB5EE4C27AA5F320012B3A6 /* APIRequestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */; };
 		CEB5EE5027AA6B120012B3A6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */; };
 		CEB5EE5227AA6BBA0012B3A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */; };
-		CED30872282CD7B100CAB96F /* ArticlePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED30871282CD7B100CAB96F /* ArticlePresentation.swift */; };
+		CED30872282CD7B100CAB96F /* ArticlesPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED30871282CD7B100CAB96F /* ArticlesPresent.swift */; };
 		CEDBF4A4265B66DA009467C4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4A3265B66D9009467C4 /* Extensions.swift */; };
 		CEDBF4C1265B7350009467C4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4C0265B7350009467C4 /* Model.swift */; };
 		CEDBF4CF265B7C36009467C4 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDBF4CD265B7C36009467C4 /* ArticleTableViewCell.xib */; };
@@ -78,12 +78,12 @@
 		CE2C81392848889100F11D75 /* TabPageCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageCustomView.swift; sourceTree = "<group>"; };
 		CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabPageCustomView.xib; sourceTree = "<group>"; };
 		CE7E1951283B5E5F00A0F25B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		CE9602D128478AC800183CC5 /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		CE9602D128478AC800183CC5 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		CE9602D428478B5600183CC5 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestURLSession.swift; sourceTree = "<group>"; };
 		CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CED30871282CD7B100CAB96F /* ArticlePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePresentation.swift; sourceTree = "<group>"; };
+		CED30871282CD7B100CAB96F /* ArticlesPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesPresent.swift; sourceTree = "<group>"; };
 		CEDBF4A3265B66D9009467C4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CEDBF4C0265B7350009467C4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CEDBF4CD265B7C36009467C4 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
@@ -189,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */,
+				CED30871282CD7B100CAB96F /* ArticlesPresent.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -206,7 +207,7 @@
 		CE9602D328478B1200183CC5 /* ArticlesViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CE9602D128478AC800183CC5 /* ArticlesViewController.swift */,
+				CE9602D128478AC800183CC5 /* ArticleViewController.swift */,
 				CE9602D428478B5600183CC5 /* ArticleTableViewCell.swift */,
 			);
 			name = ArticlesViewController;
@@ -229,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */,
-				CED30871282CD7B100CAB96F /* ArticlePresentation.swift */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -547,10 +547,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED30872282CD7B100CAB96F /* ArticlePresentation.swift in Sources */,
+				CED30872282CD7B100CAB96F /* ArticlesPresent.swift in Sources */,
 				CE1629F8265B5CF1005CCAE2 /* AppDelegate.swift in Sources */,
 				CEB5EE4C27AA5F320012B3A6 /* APIRequestURLSession.swift in Sources */,
-				CE9602D228478AC800183CC5 /* ArticlesViewController.swift in Sources */,
+				CE9602D228478AC800183CC5 /* ArticleViewController.swift in Sources */,
 				CE1629FA265B5CF1005CCAE2 /* SceneDelegate.swift in Sources */,
 				CE2C81372848703B00F11D75 /* TabPageCollectionViewCell.swift in Sources */,
 				CE9602D528478B5600183CC5 /* ArticleTableViewCell.swift in Sources */,

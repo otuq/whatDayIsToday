@@ -12,13 +12,14 @@ class ArticleTableViewCell: UITableViewCell {
     private let selectView = UIView()
     var article: String? {
         didSet {
-            print(article)
             articleLabel.text = article
         }
     }
+
     // MARK: - Outlet,Action
     @IBOutlet var articleLabel: UILabel!
-    // MARK: -LifeCycle Methods
+
+    // MARK: - LifeCycle Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         selectView.backgroundColor = .clear

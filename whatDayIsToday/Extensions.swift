@@ -17,7 +17,7 @@ extension UIButton {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.3
         layer.shadowRadius = 1
-
+        
         contentMode = .scaleAspectFit
         isUserInteractionEnabled = true
     }
@@ -53,3 +53,36 @@ extension UIView {
         }
     }
 }
+extension UINavigationController {
+    func presentationSetting(parentVC: UIViewController, presentingVC: UIViewController, title: String) {
+        presentingVC.navigationItem.title = title
+        presentingVC.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: parentVC, action: #selector(closeButton))
+        modalPresentationStyle = .overFullScreen
+        parentVC.present(self, animated: true)
+    }
+    @objc private func closeButton() {
+    }
+}
+extension UIColor {
+    static func dynamicColor(light: UIColor, dark: UIColor) -> UIColor {
+        UIColor { (traitCollection: UITraitCollection) -> UIColor in
+            if traitCollection.userInterfaceStyle == .dark {
+                return dark
+            } else {
+                return light
+            }
+        }
+    }
+}
+extension UIViewController {
+    // ステータスバーの色スタイルを動的に変更する
+    func statusBarStyleChange(style: UIStatusBarStyle) {
+        if UITraitCollection.current.userInterfaceStyle == .dark {
+            // 最前面VCの取得
+            guard let rootVC = UIApplication.shared.keyWindow?.rootViewController as? HomeViewController else { return }
+            rootVC.statusBarStyle = style
+            UIView.animate(withDuration: 1) {
+                self.setNeedsStatusBarAppearanceUpdate()
+            }
+        }
+    }}

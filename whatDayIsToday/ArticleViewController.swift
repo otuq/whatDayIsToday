@@ -7,12 +7,13 @@
 
 import UIKit
 
-class ArticlesViewController: UIViewController {
-    // MARK: -properties
+class ArticleViewController: UIViewController {
+    // MARK: - properties
     private let cellId = "cellId"
     private let articlesTableView = UITableView()
     var getArticles: (() -> [String]) = { [] }
-    // MARK: -LifeCycle Methods
+
+    // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         settingUI()
@@ -35,7 +36,7 @@ class ArticlesViewController: UIViewController {
         view.addSubview(articlesTableView)
     }
 }
-extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
+extension ArticleViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let articles = getArticles()
         return articles.count

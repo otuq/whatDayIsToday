@@ -4,25 +4,20 @@
 //
 //  Created by USER on 2022/05/09.
 //
-// ステータスコードについてシステムが処理結果の状態を外部に知らせるための数字符号を使ったエラーコード、100番台は「情報」200番台は「成功」300番台は「転送」、400番台は「クライアント側のエラー」500番台は「サーバー側のエラー」
-// https://e-words.jp/w/%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89.html
 
 import Foundation
 import PKHUD
 
 class APIRequestURLSession {
-    // MARK: -properties
-    // ベースとなるurl
+    // MARK: - properties
     private var baseurl = URLComponents(string: "https://ja.wikipedia.org/w/api.php")!
     static var shared = APIRequestURLSession()
-    // パラメータ
     private var queryItems = [
         URLQueryItem(name: "format", value: "json"),
         URLQueryItem(name: "action", value: "query"),
         URLQueryItem(name: "prop", value: "extracts"),
         URLQueryItem(name: "explaintext", value: "")
     ]
-
     func apiRequest (item: URLQueryItem, complition: @escaping(Result) -> Void) {
         queryItems.append(item)
         baseurl.queryItems = queryItems
@@ -40,7 +35,6 @@ class APIRequestURLSession {
                     let decoder = JSONDecoder()
                     let result = try decoder.decode(Result.self, from: data)
                     print("decodeに成功しました。")
-                    // コールバック
                     complition(result)
                 } catch let error as NSError {
                     HUD.hide()

@@ -10,19 +10,21 @@ import UIKit
 protocol TabCustomPageViewPresent {
     var viewHeight: CGFloat { get }
 }
+
 class TabPageViewController: UIPageViewController {
-    // MARK: -Properties
+    // MARK: - Properties
     var currentIndex: ((_ index: Int) -> Void)?
     private var pageViewControllers: [UIViewController] = []
     private var tabPageView: TabPageCustomView!
-    private let fetchArticles = ArticlePresentation()
-    // MARK: -LifeCycle Methods
+    private let fetchArticles = ArticlesPresent()
+
+    // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
         delegate = self
-        view.backgroundColor = .white
         settingTabPageView()
+        statusBarStyleChange(style: .lightContent)
         // TabPageCustomViewから選択したtabのindexをクロージャで取得する。
         tabPageView.selectIndex = { [weak self](index: Int) in
             self?.displayControllerWithIndex(index: index)
@@ -40,8 +42,9 @@ class TabPageViewController: UIPageViewController {
     private func settingTabPageView() {
         let eventVC = R.storyboard.articles.instantiateInitialViewController()
         let birthDayVC = R.storyboard.articles.instantiateInitialViewController()
-        guard let eventArticle = fetchArticles.articleExtract(start: 0, end: 1),
-              let birthcDayArticle = fetchArticles.articleExtract(start: 1, end: 2) else { return }
+        guard let eventArticle = fetchArticles.articlesExtract(start: 0, end: 1),
+              let birthcDayArticle = fetchArticles.articlesExtract(start: 1, end: 2) else { return }
+        // グローバル変数で受け渡しを避けたかったが他に方法がわからなかったのでクロージャで渡してみる。
         eventVC?.getArticles = { eventArticle }
         birthDayVC?.getArticles = { birthcDayArticle }
         [eventVC!, birthDayVC!].forEach { pageViewControllers.append($0) }
@@ -91,7 +94,6 @@ extension TabPageViewController: UIPageViewControllerDelegate, UIPageViewControl
         // 遷移した先のvcを取得
         let transitionVC = pageViewController.viewControllers?.first
         let transitionIndex = pageViewControllers.firstIndex(of: transitionVC!) ?? 0
-        // クロージャに渡す
         currentIndex?(transitionIndex)
         tabPageView.tabPageCollectionView.reloadData()
     }
