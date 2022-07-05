@@ -263,7 +263,7 @@
 		783486F70D5CCBBD2A958431DF8BB840 /* Pods-whatDayIsToday-whatDayIsTodayUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-whatDayIsToday-whatDayIsTodayUITests-umbrella.h"; sourceTree = "<group>"; };
 		788BDD5713DF73A08814E761A1AB2139 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
 		7EF79FC03D31CA9E29558519DA234499 /* Pods-whatDayIsToday-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whatDayIsToday-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7F72944487EC08F2EC7E948F8D98C731 /* Pods-whatDayIsToday */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-whatDayIsToday"; path = Pods_whatDayIsToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F72944487EC08F2EC7E948F8D98C731 /* Pods_whatDayIsToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatDayIsToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDB05D4D1FF0055C1981C48782D1CCA /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
 		8011DC8E04A5A2B6756B9CD29A229950 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
 		832B2DD803A99AED081DEF1FDB72B0FC /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
@@ -637,7 +637,7 @@
 				95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */,
 				05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */,
 				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */,
-				7F72944487EC08F2EC7E948F8D98C731 /* Pods-whatDayIsToday */,
+				7F72944487EC08F2EC7E948F8D98C731 /* Pods_whatDayIsToday.framework */,
 				3059938A5B2A8C7C2800FBAF0392A726 /* Pods-whatDayIsToday-whatDayIsTodayUITests */,
 				E83525B87A3E663913EFDCEB34A68287 /* Pods-whatDayIsTodayTests */,
 				CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */,
@@ -777,7 +777,7 @@
 			);
 			name = "Pods-whatDayIsToday";
 			productName = Pods_whatDayIsToday;
-			productReference = 7F72944487EC08F2EC7E948F8D98C731 /* Pods-whatDayIsToday */;
+			productReference = 7F72944487EC08F2EC7E948F8D98C731 /* Pods_whatDayIsToday.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */ = {
