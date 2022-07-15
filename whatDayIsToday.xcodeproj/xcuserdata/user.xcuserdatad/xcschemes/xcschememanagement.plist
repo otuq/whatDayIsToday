@@ -30,6 +30,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>whatDayIsTodayTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>whatDayIsTodayUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CE1629F3265B5CF1005CCAE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE7AE5A028740B75004F05A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE7AE5AF28740B91004F05A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

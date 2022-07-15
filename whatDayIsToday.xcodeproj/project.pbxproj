@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C11E18F6B4174913B5F86E8 /* Pods_whatDayIsTodayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A478A0DB45C44A2607485C4 /* Pods_whatDayIsTodayTests.framework */; };
+		A903CB9DCF5C10D27E8B173B /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E43D6FAD2C6E5B4C366245 /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework */; };
 		BA681B125BC03DCD3BE50EDC /* Pods_whatDayIsToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653E21AB2F2C935903A375C /* Pods_whatDayIsToday.framework */; };
-		C42804B81799CD11E04FA561 /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E43D6FAD2C6E5B4C366245 /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework */; };
 		CE1629F8265B5CF1005CCAE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1629F7265B5CF1005CCAE2 /* AppDelegate.swift */; };
 		CE1629FA265B5CF1005CCAE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1629F9265B5CF1005CCAE2 /* SceneDelegate.swift */; };
-		CE1629FF265B5CF1005CCAE2 /* Articles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1629FD265B5CF1005CCAE2 /* Articles.storyboard */; };
 		CE162A01265B5CF2005CCAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE162A00265B5CF2005CCAE2 /* Assets.xcassets */; };
 		CE162A04265B5CF2005CCAE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE162A02265B5CF2005CCAE2 /* LaunchScreen.storyboard */; };
+		CE24AE89287E815E00C99A05 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24AE88287E815E00C99A05 /* InformationViewController.swift */; };
+		CE24AE8B287E82A000C99A05 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24AE8A287E82A000C99A05 /* Form.swift */; };
 		CE2C812B284868D600F11D75 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C812A284868D600F11D75 /* TabPageViewController.swift */; };
 		CE2C812D28486B2A00F11D75 /* TabPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2C812C28486B2A00F11D75 /* TabPage.storyboard */; };
 		CE2C81372848703B00F11D75 /* TabPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C81352848703B00F11D75 /* TabPageCollectionViewCell.swift */; };
 		CE2C81382848703B00F11D75 /* TabPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2C81362848703B00F11D75 /* TabPageCollectionViewCell.xib */; };
 		CE2C813A2848889100F11D75 /* TabPageCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C81392848889100F11D75 /* TabPageCustomView.swift */; };
 		CE2C813C28488EA900F11D75 /* TabPageCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */; };
+		CE7AE5A428740B75004F05A7 /* whatDayIsTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AE5A328740B75004F05A7 /* whatDayIsTodayUITests.swift */; };
+		CE7AE5A628740B75004F05A7 /* whatDayIsTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AE5A528740B75004F05A7 /* whatDayIsTodayUITestsLaunchTests.swift */; };
+		CE7AE5B328740B91004F05A7 /* whatDayIsTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AE5B228740B91004F05A7 /* whatDayIsTodayTests.swift */; };
 		CE7E1952283B5E5F00A0F25B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E1951283B5E5F00A0F25B /* R.generated.swift */; };
 		CE9602D228478AC800183CC5 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9602D128478AC800183CC5 /* ArticleViewController.swift */; };
 		CE9602D528478B5600183CC5 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9602D428478B5600183CC5 /* ArticleTableViewCell.swift */; };
+		CE9E3DC828812DE90044825F /* Articles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3DC728812DE90044825F /* Articles.storyboard */; };
 		CEB5EE4C27AA5F320012B3A6 /* APIRequestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */; };
 		CEB5EE5027AA6B120012B3A6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */; };
 		CEB5EE5227AA6BBA0012B3A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */; };
@@ -30,23 +36,22 @@
 		CEDBF4A4265B66DA009467C4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4A3265B66D9009467C4 /* Extensions.swift */; };
 		CEDBF4C1265B7350009467C4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBF4C0265B7350009467C4 /* Model.swift */; };
 		CEDBF4CF265B7C36009467C4 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDBF4CD265B7C36009467C4 /* ArticleTableViewCell.xib */; };
-		F3EBF130664D2D7501BD5D85 /* Pods_whatDayIsTodayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A478A0DB45C44A2607485C4 /* Pods_whatDayIsTodayTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE162A0B265B5CF2005CCAE2 /* PBXContainerItemProxy */ = {
+		CE7AE5A728740B75004F05A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE1629EC265B5CF1005CCAE2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CE1629F3265B5CF1005CCAE2;
-			remoteInfo = informationGatherringApp;
+			remoteInfo = whatDayIsToday;
 		};
-		CE162A16265B5CF2005CCAE2 /* PBXContainerItemProxy */ = {
+		CE7AE5B428740B91004F05A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE1629EC265B5CF1005CCAE2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CE1629F3265B5CF1005CCAE2;
-			remoteInfo = informationGatherringApp;
+			remoteInfo = whatDayIsToday;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,21 +70,26 @@
 		CE1629F4265B5CF1005CCAE2 /* whatDayIsToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatDayIsToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1629F7265B5CF1005CCAE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1629F9265B5CF1005CCAE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE1629FE265B5CF1005CCAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Articles.storyboard; sourceTree = "<group>"; };
 		CE162A00265B5CF2005CCAE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE162A03265B5CF2005CCAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE162A05265B5CF2005CCAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE162A0A265B5CF2005CCAE2 /* whatDayIsTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE162A15265B5CF2005CCAE2 /* whatDayIsTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE24AE88287E815E00C99A05 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		CE24AE8A287E82A000C99A05 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		CE2C812A284868D600F11D75 /* TabPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 		CE2C812C28486B2A00F11D75 /* TabPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPage.storyboard; sourceTree = "<group>"; };
 		CE2C81352848703B00F11D75 /* TabPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE2C81362848703B00F11D75 /* TabPageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabPageCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE2C81392848889100F11D75 /* TabPageCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageCustomView.swift; sourceTree = "<group>"; };
 		CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabPageCustomView.xib; sourceTree = "<group>"; };
+		CE7AE5A128740B75004F05A7 /* whatDayIsTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7AE5A328740B75004F05A7 /* whatDayIsTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatDayIsTodayUITests.swift; sourceTree = "<group>"; };
+		CE7AE5A528740B75004F05A7 /* whatDayIsTodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatDayIsTodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE7AE5B028740B91004F05A7 /* whatDayIsTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatDayIsTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7AE5B228740B91004F05A7 /* whatDayIsTodayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatDayIsTodayTests.swift; sourceTree = "<group>"; };
 		CE7E1951283B5E5F00A0F25B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CE9602D128478AC800183CC5 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		CE9602D428478B5600183CC5 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		CE9E3DC728812DE90044825F /* Articles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Articles.storyboard; sourceTree = "<group>"; };
 		CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestURLSession.swift; sourceTree = "<group>"; };
 		CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -102,19 +112,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE162A07265B5CF2005CCAE2 /* Frameworks */ = {
+		CE7AE59E28740B75004F05A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EBF130664D2D7501BD5D85 /* Pods_whatDayIsTodayTests.framework in Frameworks */,
+				A903CB9DCF5C10D27E8B173B /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE162A12265B5CF2005CCAE2 /* Frameworks */ = {
+		CE7AE5AD28740B91004F05A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42804B81799CD11E04FA561 /* Pods_whatDayIsToday_whatDayIsTodayUITests.framework in Frameworks */,
+				5C11E18F6B4174913B5F86E8 /* Pods_whatDayIsTodayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				CE1629F6265B5CF1005CCAE2 /* whatDayIsToday */,
+				CE7AE5B128740B91004F05A7 /* whatDayIsTodayTests */,
+				CE7AE5A228740B75004F05A7 /* whatDayIsTodayUITests */,
 				CE1629F5265B5CF1005CCAE2 /* Products */,
 				CE8DEDEF2828D0660031F2E3 /* Frameworks */,
 				3501BB1BF720A8BD2E5E3DFB /* Pods */,
@@ -154,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				CE1629F4265B5CF1005CCAE2 /* whatDayIsToday.app */,
-				CE162A0A265B5CF2005CCAE2 /* whatDayIsTodayTests.xctest */,
-				CE162A15265B5CF2005CCAE2 /* whatDayIsTodayUITests.xctest */,
+				CE7AE5A128740B75004F05A7 /* whatDayIsTodayUITests.xctest */,
+				CE7AE5B028740B91004F05A7 /* whatDayIsTodayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,20 +181,37 @@
 				CE8DEDEE2828CDD70031F2E3 /* API */,
 				CE9602D328478B1200183CC5 /* ArticlesViewController */,
 				CED3086F282CD59000CAB96F /* HomeViewController */,
-				CE2C813228486F9A00F11D75 /* TabPage */,
+				CE2C813228486F9A00F11D75 /* TabPageViewController */,
 				CEDBF4B3265B7105009467C4 /* StoryBoards */,
 			);
 			path = whatDayIsToday;
 			sourceTree = "<group>";
 		};
-		CE2C813228486F9A00F11D75 /* TabPage */ = {
+		CE2C813228486F9A00F11D75 /* TabPageViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CE2C812A284868D600F11D75 /* TabPageViewController.swift */,
 				CE2C81392848889100F11D75 /* TabPageCustomView.swift */,
 				CE2C81352848703B00F11D75 /* TabPageCollectionViewCell.swift */,
 			);
-			name = TabPage;
+			path = TabPageViewController;
+			sourceTree = "<group>";
+		};
+		CE7AE5A228740B75004F05A7 /* whatDayIsTodayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7AE5A328740B75004F05A7 /* whatDayIsTodayUITests.swift */,
+				CE7AE5A528740B75004F05A7 /* whatDayIsTodayUITestsLaunchTests.swift */,
+			);
+			path = whatDayIsTodayUITests;
+			sourceTree = "<group>";
+		};
+		CE7AE5B128740B91004F05A7 /* whatDayIsTodayTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7AE5B228740B91004F05A7 /* whatDayIsTodayTests.swift */,
+			);
+			path = whatDayIsTodayTests;
 			sourceTree = "<group>";
 		};
 		CE8DEDEE2828CDD70031F2E3 /* API */ = {
@@ -191,7 +220,7 @@
 				CEB5EE4B27AA5F320012B3A6 /* APIRequestURLSession.swift */,
 				CED30871282CD7B100CAB96F /* ArticlesPresent.swift */,
 			);
-			name = API;
+			path = API;
 			sourceTree = "<group>";
 		};
 		CE8DEDEF2828D0660031F2E3 /* Frameworks */ = {
@@ -211,6 +240,7 @@
 				CE9602D428478B5600183CC5 /* ArticleTableViewCell.swift */,
 			);
 			name = ArticlesViewController;
+			path = AriticlesViewConroller;
 			sourceTree = "<group>";
 		};
 		CEC570B1283B5A5F00CA964F /* Configuration */ = {
@@ -230,16 +260,18 @@
 			isa = PBXGroup;
 			children = (
 				CEB5EE5127AA6BBA0012B3A6 /* HomeViewController.swift */,
+				CE24AE88287E815E00C99A05 /* InformationViewController.swift */,
 			);
-			name = HomeViewController;
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		CEDBF4A2265B66C3009467C4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				CEDBF4A3265B66D9009467C4 /* Extensions.swift */,
+				CE24AE8A287E82A000C99A05 /* Form.swift */,
 			);
-			name = Extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		CEDBF4B3265B7105009467C4 /* StoryBoards */ = {
@@ -247,12 +279,13 @@
 			children = (
 				CEB5EE4F27AA6B120012B3A6 /* Home.storyboard */,
 				CE2C812C28486B2A00F11D75 /* TabPage.storyboard */,
-				CE1629FD265B5CF1005CCAE2 /* Articles.storyboard */,
+				CE9E3DC728812DE90044825F /* Articles.storyboard */,
 				CE2C813B28488EA900F11D75 /* TabPageCustomView.xib */,
 				CE2C81362848703B00F11D75 /* TabPageCollectionViewCell.xib */,
 				CEDBF4CD265B7C36009467C4 /* ArticleTableViewCell.xib */,
 			);
 			name = StoryBoards;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		CEDBF4BF265B733D009467C4 /* Model */ = {
@@ -260,7 +293,7 @@
 			children = (
 				CEDBF4C0265B7350009467C4 /* Model.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,44 +320,44 @@
 			productReference = CE1629F4265B5CF1005CCAE2 /* whatDayIsToday.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE162A09265B5CF2005CCAE2 /* whatDayIsTodayTests */ = {
+		CE7AE5A028740B75004F05A7 /* whatDayIsTodayUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE162A21265B5CF3005CCAE2 /* Build configuration list for PBXNativeTarget "whatDayIsTodayTests" */;
+			buildConfigurationList = CE7AE5A928740B75004F05A7 /* Build configuration list for PBXNativeTarget "whatDayIsTodayUITests" */;
 			buildPhases = (
-				C087D604F0E925F294058437 /* [CP] Check Pods Manifest.lock */,
-				CE162A06265B5CF2005CCAE2 /* Sources */,
-				CE162A07265B5CF2005CCAE2 /* Frameworks */,
-				CE162A08265B5CF2005CCAE2 /* Resources */,
+				A560A032AAB022597AE58AC9 /* [CP] Check Pods Manifest.lock */,
+				CE7AE59D28740B75004F05A7 /* Sources */,
+				CE7AE59E28740B75004F05A7 /* Frameworks */,
+				CE7AE59F28740B75004F05A7 /* Resources */,
+				F3FF7119A64436E79810B8E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE162A0C265B5CF2005CCAE2 /* PBXTargetDependency */,
-			);
-			name = whatDayIsTodayTests;
-			productName = informationGatherringAppTests;
-			productReference = CE162A0A265B5CF2005CCAE2 /* whatDayIsTodayTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CE162A14265B5CF2005CCAE2 /* whatDayIsTodayUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE162A24265B5CF3005CCAE2 /* Build configuration list for PBXNativeTarget "whatDayIsTodayUITests" */;
-			buildPhases = (
-				00F84FEB0C983D7E4B6096AC /* [CP] Check Pods Manifest.lock */,
-				CE162A11265B5CF2005CCAE2 /* Sources */,
-				CE162A12265B5CF2005CCAE2 /* Frameworks */,
-				CE162A13265B5CF2005CCAE2 /* Resources */,
-				38C831C01EE506E2ED7D8474 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE162A17265B5CF2005CCAE2 /* PBXTargetDependency */,
+				CE7AE5A828740B75004F05A7 /* PBXTargetDependency */,
 			);
 			name = whatDayIsTodayUITests;
-			productName = informationGatherringAppUITests;
-			productReference = CE162A15265B5CF2005CCAE2 /* whatDayIsTodayUITests.xctest */;
+			productName = whatDayIsTodayUITests;
+			productReference = CE7AE5A128740B75004F05A7 /* whatDayIsTodayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CE7AE5AF28740B91004F05A7 /* whatDayIsTodayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7AE5B628740B91004F05A7 /* Build configuration list for PBXNativeTarget "whatDayIsTodayTests" */;
+			buildPhases = (
+				84A62CC6136899D679D1D895 /* [CP] Check Pods Manifest.lock */,
+				CE7AE5AC28740B91004F05A7 /* Sources */,
+				CE7AE5AD28740B91004F05A7 /* Frameworks */,
+				CE7AE5AE28740B91004F05A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7AE5B528740B91004F05A7 /* PBXTargetDependency */,
+			);
+			name = whatDayIsTodayTests;
+			productName = whatDayIsTodayTests;
+			productReference = CE7AE5B028740B91004F05A7 /* whatDayIsTodayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -332,20 +365,18 @@
 		CE1629EC265B5CF1005CCAE2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					CE1629F3265B5CF1005CCAE2 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					CE162A09265B5CF2005CCAE2 = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1330;
+					CE7AE5A028740B75004F05A7 = {
+						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = CE1629F3265B5CF1005CCAE2;
 					};
-					CE162A14265B5CF2005CCAE2 = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1330;
+					CE7AE5AF28740B91004F05A7 = {
+						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = CE1629F3265B5CF1005CCAE2;
 					};
 				};
@@ -364,8 +395,8 @@
 			projectRoot = "";
 			targets = (
 				CE1629F3265B5CF1005CCAE2 /* whatDayIsToday */,
-				CE162A09265B5CF2005CCAE2 /* whatDayIsTodayTests */,
-				CE162A14265B5CF2005CCAE2 /* whatDayIsTodayUITests */,
+				CE7AE5A028740B75004F05A7 /* whatDayIsTodayUITests */,
+				CE7AE5AF28740B91004F05A7 /* whatDayIsTodayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,20 +411,20 @@
 				CEDBF4CF265B7C36009467C4 /* ArticleTableViewCell.xib in Resources */,
 				CE162A01265B5CF2005CCAE2 /* Assets.xcassets in Resources */,
 				CE2C81382848703B00F11D75 /* TabPageCollectionViewCell.xib in Resources */,
-				CE1629FF265B5CF1005CCAE2 /* Articles.storyboard in Resources */,
 				CE2C812D28486B2A00F11D75 /* TabPage.storyboard in Resources */,
 				CEB5EE5027AA6B120012B3A6 /* Home.storyboard in Resources */,
+				CE9E3DC828812DE90044825F /* Articles.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE162A08265B5CF2005CCAE2 /* Resources */ = {
+		CE7AE59F28740B75004F05A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE162A13265B5CF2005CCAE2 /* Resources */ = {
+		CE7AE5AE28740B91004F05A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,45 +434,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00F84FEB0C983D7E4B6096AC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-whatDayIsToday-whatDayIsTodayUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		38C831C01EE506E2ED7D8474 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday-whatDayIsTodayUITests/Pods-whatDayIsToday-whatDayIsTodayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday-whatDayIsTodayUITests/Pods-whatDayIsToday-whatDayIsTodayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday-whatDayIsTodayUITests/Pods-whatDayIsToday-whatDayIsTodayUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6F871C1D7D8D9A43B111291A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,7 +456,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C087D604F0E925F294058437 /* [CP] Check Pods Manifest.lock */ = {
+		84A62CC6136899D679D1D895 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,6 +472,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-whatDayIsTodayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A560A032AAB022597AE58AC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whatDayIsToday-whatDayIsTodayUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,7 +516,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\n  # swiftlint autocorrect --format\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\n  swiftlint autocorrect --format\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
 		CE9EECC3282A146300BB1B33 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -540,6 +554,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday/Pods-whatDayIsToday-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3FF7119A64436E79810B8E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday-whatDayIsTodayUITests/Pods-whatDayIsToday-whatDayIsTodayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday-whatDayIsTodayUITests/Pods-whatDayIsToday-whatDayIsTodayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whatDayIsToday-whatDayIsTodayUITests/Pods-whatDayIsToday-whatDayIsTodayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -549,6 +580,7 @@
 			files = (
 				CED30872282CD7B100CAB96F /* ArticlesPresent.swift in Sources */,
 				CE1629F8265B5CF1005CCAE2 /* AppDelegate.swift in Sources */,
+				CE24AE8B287E82A000C99A05 /* Form.swift in Sources */,
 				CEB5EE4C27AA5F320012B3A6 /* APIRequestURLSession.swift in Sources */,
 				CE9602D228478AC800183CC5 /* ArticleViewController.swift in Sources */,
 				CE1629FA265B5CF1005CCAE2 /* SceneDelegate.swift in Sources */,
@@ -556,6 +588,7 @@
 				CE9602D528478B5600183CC5 /* ArticleTableViewCell.swift in Sources */,
 				CEDBF4C1265B7350009467C4 /* Model.swift in Sources */,
 				CE7E1952283B5E5F00A0F25B /* R.generated.swift in Sources */,
+				CE24AE89287E815E00C99A05 /* InformationViewController.swift in Sources */,
 				CEDBF4A4265B66DA009467C4 /* Extensions.swift in Sources */,
 				CE2C813A2848889100F11D75 /* TabPageCustomView.swift in Sources */,
 				CE2C812B284868D600F11D75 /* TabPageViewController.swift in Sources */,
@@ -563,44 +596,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE162A06265B5CF2005CCAE2 /* Sources */ = {
+		CE7AE59D28740B75004F05A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7AE5A428740B75004F05A7 /* whatDayIsTodayUITests.swift in Sources */,
+				CE7AE5A628740B75004F05A7 /* whatDayIsTodayUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE162A11265B5CF2005CCAE2 /* Sources */ = {
+		CE7AE5AC28740B91004F05A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7AE5B328740B91004F05A7 /* whatDayIsTodayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE162A0C265B5CF2005CCAE2 /* PBXTargetDependency */ = {
+		CE7AE5A828740B75004F05A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE1629F3265B5CF1005CCAE2 /* whatDayIsToday */;
-			targetProxy = CE162A0B265B5CF2005CCAE2 /* PBXContainerItemProxy */;
+			targetProxy = CE7AE5A728740B75004F05A7 /* PBXContainerItemProxy */;
 		};
-		CE162A17265B5CF2005CCAE2 /* PBXTargetDependency */ = {
+		CE7AE5B528740B91004F05A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE1629F3265B5CF1005CCAE2 /* whatDayIsToday */;
-			targetProxy = CE162A16265B5CF2005CCAE2 /* PBXContainerItemProxy */;
+			targetProxy = CE7AE5B428740B91004F05A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE1629FD265B5CF1005CCAE2 /* Articles.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE1629FE265B5CF1005CCAE2 /* Base */,
-			);
-			name = Articles.storyboard;
-			sourceTree = "<group>";
-		};
 		CE162A02265B5CF2005CCAE2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -768,99 +796,85 @@
 			};
 			name = Release;
 		};
-		CE162A22265B5CF3005CCAE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81BDC9FE3F6E8D064789D3E2 /* Pods-whatDayIsTodayTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98N8TAVGKD;
-				INFOPLIST_FILE = informationGatherringAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.informationGatherringAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whatDayIsToday.app/whatDayIsToday";
-			};
-			name = Debug;
-		};
-		CE162A23265B5CF3005CCAE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED0D0E950CC03A874CD25380 /* Pods-whatDayIsTodayTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98N8TAVGKD;
-				INFOPLIST_FILE = informationGatherringAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.informationGatherringAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whatDayIsToday.app/whatDayIsToday";
-			};
-			name = Release;
-		};
-		CE162A25265B5CF3005CCAE2 /* Debug */ = {
+		CE7AE5AA28740B75004F05A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 326C2C500A0AAF030BDC470D /* Pods-whatDayIsToday-whatDayIsTodayUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 98N8TAVGKD;
-				INFOPLIST_FILE = informationGatherringAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.informationGatherringAppUITests;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.whatDayIsTodayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "whatDayIsTodayUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = informationGatherringApp;
+				TEST_TARGET_NAME = whatDayIsToday;
 			};
 			name = Debug;
 		};
-		CE162A26265B5CF3005CCAE2 /* Release */ = {
+		CE7AE5AB28740B75004F05A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C380937D3770BC7D7321E475 /* Pods-whatDayIsToday-whatDayIsTodayUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 98N8TAVGKD;
-				INFOPLIST_FILE = informationGatherringAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.informationGatherringAppUITests;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.whatDayIsTodayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "whatDayIsTodayUITests-Bridging-Header.h";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = informationGatherringApp;
+				TEST_TARGET_NAME = whatDayIsToday;
+			};
+			name = Release;
+		};
+		CE7AE5B728740B91004F05A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81BDC9FE3F6E8D064789D3E2 /* Pods-whatDayIsTodayTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98N8TAVGKD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.whatDayIsTodayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whatDayIsToday.app/whatDayIsToday";
+			};
+			name = Debug;
+		};
+		CE7AE5B828740B91004F05A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0D0E950CC03A874CD25380 /* Pods-whatDayIsTodayTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98N8TAVGKD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otuq.whatDayIsTodayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whatDayIsToday.app/whatDayIsToday";
 			};
 			name = Release;
 		};
@@ -885,20 +899,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE162A21265B5CF3005CCAE2 /* Build configuration list for PBXNativeTarget "whatDayIsTodayTests" */ = {
+		CE7AE5A928740B75004F05A7 /* Build configuration list for PBXNativeTarget "whatDayIsTodayUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE162A22265B5CF3005CCAE2 /* Debug */,
-				CE162A23265B5CF3005CCAE2 /* Release */,
+				CE7AE5AA28740B75004F05A7 /* Debug */,
+				CE7AE5AB28740B75004F05A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE162A24265B5CF3005CCAE2 /* Build configuration list for PBXNativeTarget "whatDayIsTodayUITests" */ = {
+		CE7AE5B628740B91004F05A7 /* Build configuration list for PBXNativeTarget "whatDayIsTodayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE162A25265B5CF3005CCAE2 /* Debug */,
-				CE162A26265B5CF3005CCAE2 /* Release */,
+				CE7AE5B728740B91004F05A7 /* Debug */,
+				CE7AE5B828740B91004F05A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

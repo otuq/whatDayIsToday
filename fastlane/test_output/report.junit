@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='whatDayIsTodayUITests.xctest' tests='8' failures='1'>
+  <testsuite name='whatDayIsTodayTests.whatDayIsTodayTests' tests='2' failures='0'>
+    <testcase classname='whatDayIsTodayTests.whatDayIsTodayTests' name='testAPIRequest' time='0.010'/>
+    <testcase classname='whatDayIsTodayTests.whatDayIsTodayTests' name='testPerformanceExample' time='0.835'/>
+  </testsuite>
+  <testsuite name='whatDayIsTodayUITests.whatDayIsTodayUITests' tests='2' failures='1'>
+    <testcase classname='whatDayIsTodayUITests.whatDayIsTodayUITests' name='testAPIRequest' time='0.141'/>
+    <testcase classname='whatDayIsTodayUITests.whatDayIsTodayUITests' name='testLaunchPerformance'>
+      <failure message='Detected a metric that was not measured in the first iteration: com.apple.dt.XCTMetric_ApplicationLaunch-AppLaunch.duration'>whatDayIsTodayUITests/whatDayIsTodayUITests.swift:26</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name='whatDayIsTodayUITests.whatDayIsTodayUITestsLaunchTests' tests='4' failures='0'>
+    <testcase classname='whatDayIsTodayUITests.whatDayIsTodayUITestsLaunchTests' name='testLaunch' time='6.019'/>
+    <testcase classname='whatDayIsTodayUITests.whatDayIsTodayUITestsLaunchTests' name='testLaunch' time='7.157'/>
+    <testcase classname='whatDayIsTodayUITests.whatDayIsTodayUITestsLaunchTests' name='testLaunch' time='5.860'/>
+    <testcase classname='whatDayIsTodayUITests.whatDayIsTodayUITestsLaunchTests' name='testLaunch' time='8.005'/>
+  </testsuite>
+</testsuites>

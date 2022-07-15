@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE162A09265B5CF2005CCAE2"
+               BlueprintIdentifier = "CE7AE5AF28740B91004F05A7"
                BuildableName = "whatDayIsTodayTests.xctest"
                BlueprintName = "whatDayIsTodayTests"
                ReferencedContainer = "container:whatDayIsToday.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE162A14265B5CF2005CCAE2"
+               BlueprintIdentifier = "CE7AE5A028740B75004F05A7"
                BuildableName = "whatDayIsTodayUITests.xctest"
                BlueprintName = "whatDayIsTodayUITests"
                ReferencedContainer = "container:whatDayIsToday.xcodeproj">

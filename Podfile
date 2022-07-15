@@ -10,6 +10,7 @@ target 'whatDayIsToday' do
 pod 'R.swift'
 pod 'FSCalendar'
 pod 'PKHUD'
+pod 'Eureka'
 
   target 'whatDayIsTodayTests' do
     inherit! :search_paths
