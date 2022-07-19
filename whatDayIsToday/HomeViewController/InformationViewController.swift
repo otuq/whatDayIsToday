@@ -21,6 +21,7 @@ class InformationViewController: FormViewController {
     private func settingView() {
         self.statusBarStyleChange(style: .lightContent)
         navigationController?.isNavigationBarHidden = false
+        navigationItem.title = "アプリの情報"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneBarButton))
     }
     @objc private func doneBarButton() {

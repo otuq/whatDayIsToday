@@ -17,6 +17,10 @@ class HomeViewController: UIViewController {
     @IBOutlet var calendar: FSCalendar!
     @IBOutlet var articleTransitionButton: UIButton!
     @IBAction func informationTransitionButton(_ sender: Any) {
+        let informationVC = InformationViewController()
+        let nav = UINavigationController(rootViewController: informationVC)
+        nav.modalPresentationStyle = .overFullScreen
+        present(nav, animated: true)
     }
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {
